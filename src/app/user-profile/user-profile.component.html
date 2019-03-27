@@ -1,0 +1,15 @@
+<p>
+  <img [src]='user.photo'/>
+</p>
+<p>
+  Name: {{user.name}} <br>
+  Firstname: {{user.firstname}} <br>
+  Age: {{user.age}} 
+  <br>
+  {{citation}}
+</p>
+  <input [(ngModel)]='citation'/>
+  <br>
+  <br>
+  <button (click)='onClick()'>Show age</button>
+  
