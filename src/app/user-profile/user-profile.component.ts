@@ -24,7 +24,12 @@ export class UserProfileComponent implements OnInit {
   ngOnInit() {
   }
   onClick(){
-  
+    if(this.isAuth === true){
+      this.isAuth = false;
+    }
+    else{
+      this.isAuth = true;
+    }
     
   }
 

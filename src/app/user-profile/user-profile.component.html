@@ -3,13 +3,13 @@
 </p>
 <p>
   Name: {{user.name}} <br>
-  Firstname: {{user.firstname}} <br>
-  Age: {{user.age}} 
+  Firstname: {{user.firstname}}  
   <br>
   {{citation}}
 </p>
   <input [(ngModel)]='citation'/>
   <br>
   <br>
+  <p [hidden]="!isAuth">{{user.age}}</p>
   <button (click)='onClick()'>Show age</button>
   
