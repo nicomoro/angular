@@ -3,6 +3,12 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
-  <app-sign-up></app-sign-up>
-  <app-user-profile></app-user-profile>
   
+  <p>My favorite movies</p><button (click)="showMovies = !showMovies">Show movies</button>
+<ul [hidden] = "showMovies">
+  <li appHighLight>Pulp Fiction</li>
+  <li>Scarface</li>
+  <li>JAWS</li>
+  <li>Forrest gump</li>
+  <li>Snatch</li>
+</ul>
