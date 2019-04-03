@@ -1,14 +1,10 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  
-  <p>My favorite movies</p><button (click)="showMovies = !showMovies">Show movies</button>
-<ul [hidden] = "showMovies">
-  <li appHighLight>Pulp Fiction</li>
-  <li>Scarface</li>
-  <li>JAWS</li>
-  <li>Forrest gump</li>
-  <li>Snatch</li>
+<ul>
+  <li>
+    <a [routerLink]="['/sign-up']">HOME</a>
+  </li>
+  <li>
+    <a [routerLink]="['/user-profile']">CONTACT</a>
+  </li>
 </ul>
+
+<router-outlet></router-outlet>

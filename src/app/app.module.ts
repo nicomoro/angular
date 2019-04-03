@@ -7,18 +7,21 @@ import { AppComponent } from './app.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { HighlightDirective } from './highlight.directive';
+import { ROUTES } from './app.routes';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignUpComponent,
     UserProfileComponent,
-    HighlightDirective
+    HighlightDirective,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot (ROUTES)
   ],
   providers: [],
   bootstrap: [AppComponent]
