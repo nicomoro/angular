@@ -9,6 +9,8 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { HighlightDirective } from './highlight.directive';
 import { ROUTES } from './app.routes';
 import { RouterModule } from '@angular/router';
+import { DeveloperComponent } from './developer/developer.component';
+import { SkillComponent } from './skill/skill.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { RouterModule } from '@angular/router';
     SignUpComponent,
     UserProfileComponent,
     HighlightDirective,
+    DeveloperComponent,
+    SkillComponent,
   ],
   imports: [
     BrowserModule,
