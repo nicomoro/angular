@@ -1,0 +1,15 @@
+[
+    
+    {
+        "name": "ARAKO",
+        "price": 4,
+        "img" : "www.internet.com"
+    },
+    
+    {
+        "name": "BARRARAKO",
+        "price": 24,
+        "img" : "www.internet.com"
+    }
+    
+]
