@@ -11,6 +11,8 @@ import { ROUTES } from './app.routes';
 import { RouterModule } from '@angular/router';
 import { DeveloperComponent } from './developer/developer.component';
 import { SkillComponent } from './skill/skill.component';
+import { CocktailService } from './cocktail.service';
+import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,7 @@ import { SkillComponent } from './skill/skill.component';
     HighlightDirective,
     DeveloperComponent,
     SkillComponent,
+    CocktailListComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,7 +30,7 @@ import { SkillComponent } from './skill/skill.component';
     FormsModule,
     RouterModule.forRoot (ROUTES)
   ],
-  providers: [],
+  providers: [CocktailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
