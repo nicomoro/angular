@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,7 +29,8 @@ import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule.forRoot (ROUTES)
+    RouterModule.forRoot (ROUTES),
+    HttpClientModule
   ],
   providers: [CocktailService],
   bootstrap: [AppComponent]

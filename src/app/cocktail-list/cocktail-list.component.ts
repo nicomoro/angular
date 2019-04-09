@@ -8,16 +8,19 @@ import { Cocktail } from '../cocktail.model';
   styleUrls: ['./cocktail-list.component.css']
 })
 export class CocktailListComponent implements OnInit {
-  public cocktail: Cocktail;
-  public cocktails = this.service.getCocktails();
+  public  cocktails: Cocktail[] = [];
+    public  service: CocktailService;
 
-  constructor(public service: CocktailService) { }
-  // getCocktails(){
-  //   // this.cocktails = this.service.getCocktails()
-  // }
+    constructor( param_service: CocktailService ){
+        this.service  =  param_service;
+    }
 
-  ngOnInit() {
-  }
-
-
+    public  ngOnInit(): void{
+        this.service.getCocktails().subscribe(
+            (param_cocktails: Cocktail[]) => {
+                this.cocktails  =  param_cocktails;
+            }
+        );
+    }
 }
+
